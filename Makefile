@@ -48,7 +48,8 @@ SRC = ft_islower.c \
 	  ft_lstclear.c \
 	  ft_lstiter.c \
 	  ft_lstadd_back.c \
-	  ft_lstmap.c
+	  ft_lstmap.c \
+	  get_next_line.c
 OBJ = $(SRC:.c=.o)
 
 all: $(NAME)
