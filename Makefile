@@ -49,7 +49,12 @@ SRC = ft_islower.c \
 	  ft_lstiter.c \
 	  ft_lstadd_back.c \
 	  ft_lstmap.c \
-	  get_next_line.c
+	  get_next_line.c \
+	  ft_printf.c \
+	  number_helpers.c \
+	  parse_specifier.c \
+	  pointer_helpers.c \
+	  specifier_handlers.c
 OBJ = $(SRC:.c=.o)
 
 all: $(NAME)

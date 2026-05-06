@@ -6,7 +6,7 @@
 /*   By: vcoevert <vcoevert@student.codam.nl>        +#+                      */
 /*                                                  +#+                       */
 /*   Created: 2026/03/10 14:44:50 by vcoevert     #+#    #+#                  */
-/*   Updated: 2026/04/20 12:31:21 by vcoevert     ########   odam.nl          */
+/*   Updated: 2026/05/06 20:59:55 by vcoevert     ########   odam.nl          */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -71,4 +71,7 @@ void	ft_lstiter(t_list *lst, void (*f)(void *));
 void	ft_lstadd_back(t_list **lst, t_list *new);
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
 char	*get_next_line(int fd);
+int		ft_printf(const char *f_str, ...) __attribute__((format(printf, 1, 2)));
+int		ft_dprintf(int fd, const char *f_str, ...)
+		__attribute__((format(printf, 2, 3)));
 #endif
