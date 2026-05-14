@@ -6,7 +6,7 @@
 /*   By: vcoevert <vcoevert@student.codam.nl>        +#+                      */
 /*                                                  +#+                       */
 /*   Created: 2026/04/24 19:41:42 by vcoevert     #+#    #+#                  */
-/*   Updated: 2026/05/06 18:15:31 by vcoevert     ########   odam.nl          */
+/*   Updated: 2026/05/14 17:30:04 by vcoevert     ########   odam.nl          */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,8 @@ int		printf_handle_nbr(int fd, t_format *format, ssize_t nbr, char *base);
 int		printf_handle_ptr(int fd, t_format *format, void *ptr);
 int		printf_number_length(ssize_t nbr, char *base, t_format *format);
 int		printf_write_digits(int fd, ssize_t nbr, char *base, int len);
-int		printf_print_number(int fd, ssize_t number, char *base, t_format *format);
+int		printf_print_number(int fd, ssize_t number,
+			char *base, t_format *format);
 int		printf_pointer_length(uintptr_t ptr, t_format *format);
 int		printf_write_ptr_digits(int fd, uintptr_t ptr, int len);
 int		printf_print_pointer(int fd, uintptr_t pointer, t_format *format);

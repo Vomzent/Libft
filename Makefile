@@ -33,6 +33,7 @@ SRC = ft_islower.c \
 	  ft_strjoin.c \
 	  ft_strtrim.c \
 	  ft_split.c \
+	  ft_psplit.c \
 	  ft_strcmp.c \
 	  ft_strmapi.c \
 	  ft_striteri.c \
