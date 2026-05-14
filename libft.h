@@ -6,7 +6,7 @@
 /*   By: vcoevert <vcoevert@student.codam.nl>        +#+                      */
 /*                                                  +#+                       */
 /*   Created: 2026/03/10 14:44:50 by vcoevert     #+#    #+#                  */
-/*   Updated: 2026/05/06 20:59:55 by vcoevert     ########   odam.nl          */
+/*   Updated: 2026/05/14 17:37:28 by vcoevert     ########   odam.nl          */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,6 +54,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len);
 char	*ft_strjoin(char const *s1, char const *s2);
 char	*ft_strtrim(char const *s1, char const *set);
 char	**ft_split(char const *s, char c);
+char	**ft_psplit(char const *s, char *c);
 int		ft_strcmp(const char *s1, const char *s2);
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 void	ft_striteri(char *s, void (*f)(unsigned int, char*));
