@@ -6,7 +6,7 @@
 /*   By: vcoevert <vcoevert@student.codam.nl>        +#+                      */
 /*                                                  +#+                       */
 /*   Created: 2026/03/16 12:22:50 by vcoevert     #+#    #+#                  */
-/*   Updated: 2026/05/14 17:29:04 by vcoevert     ########   odam.nl          */
+/*   Updated: 2026/05/14 18:05:02 by vcoevert     ########   odam.nl          */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -80,7 +80,7 @@ static char	*split_make(const char *s, char *sep)
 	if (!split)
 		return (0);
 	str = (char *)s;
-	while (!in_sep(*str, sep) && str[i])
+	while (!in_sep(str[i], sep) && str[i])
 	{
 		split[i] = str[i];
 		i++;
