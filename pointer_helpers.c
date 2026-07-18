@@ -6,7 +6,7 @@
 /*   By: vcoevert <vcoevert@student.codam.nl>        +#+                      */
 /*                                                  +#+                       */
 /*   Created: 2026/04/28 12:38:34 by vcoevert     #+#    #+#                  */
-/*   Updated: 2026/05/06 20:55:48 by vcoevert     ########   odam.nl          */
+/*   Updated: 2026/07/18 18:41:19 by vcoevert     ########   odam.nl          */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,11 +17,9 @@ int	printf_pointer_length(uintptr_t pointer, t_format *format)
 {
 	int		len;
 	int		digits;
-	char	*base;
 
 	len = 0;
 	digits = 1;
-	base = HEX_LOW;
 	if (format->sign)
 		len++;
 	len += 2;
@@ -59,11 +57,9 @@ int	printf_print_pointer(int fd, uintptr_t pointer, t_format *format)
 {
 	int		ret;
 	int		digitlen;
-	char	*base;
 
 	ret = 0;
 	digitlen = 0;
-	base = HEX_LOW;
 	if (format->sign == 1 && write(fd, "+", 1) != -1)
 		ret++;
 	else if (format->sign == 2 && write(fd, " ", 1) != -1)
